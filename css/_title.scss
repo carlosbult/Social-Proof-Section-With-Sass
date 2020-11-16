@@ -1,0 +1,17 @@
+.title {
+    width: 40%;
+    float: left;
+    h1 {
+        font-size: 3em;
+        font-weight: 700;
+        color: var(--VeryDarkMagenta);
+        padding-bottom: .3em;
+        line-height: 1em;
+    }
+    p {
+        font-size: .95em;
+        color: var(--DarkGrayishMagenta);
+        line-height: 1.8em;
+        font-weight: 400;
+    }
+}

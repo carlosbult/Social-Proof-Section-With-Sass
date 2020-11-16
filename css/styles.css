@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+
+.title {
+  width: 40%;
+  float: left;
+}
+
+.title h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--VeryDarkMagenta);
+  padding-bottom: .3em;
+  line-height: 1em;
+}
+
+.title p {
+  font-size: .95em;
+  color: var(--DarkGrayishMagenta);
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+.star {
+  width: 60%;
+  float: left;
+}
+
+.star .rant {
+  text-align: center;
+  padding: 1.3em 1.5em;
+  margin: 1.2em;
+  color: var(--VeryDarkMagenta);
+  font-weight: 600;
+  font-size: .9em;
+  background: var(--LightGrayishMagenta);
+  border-radius: 5px;
+  width: 445px;
+}
+
+.star .estrella {
+  float: left;
+  padding-left: 10px;
+}
+
+.star .guru {
+  margin-left: 6em;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.star .reviwes {
+  margin-left: 11em;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.star .bestech {
+  margin-left: 16em;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.testimonios {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonios .testimonio-persona {
+  width: 350px;
+  height: 234px;
+  border-radius: 5px;
+  background-color: var(--VeryDarkMagenta);
+  padding: 40px 30px;
+}
+
+.testimonios .testimonio-persona img {
+  border-radius: 50%;
+  width: 40px;
+  float: left;
+  margin-right: 27px;
+}
+
+.testimonios .testimonio-persona h3 {
+  color: var(--LightGrayishMagenta);
+  font-size: .8em;
+  margin-bottom: .6em;
+}
+
+.testimonios .testimonio-persona h4 {
+  color: var(--SoftPink);
+  font-size: .8em;
+  font-weight: 400;
+}
+
+.testimonios .testimonio-persona p {
+  color: var(--LightGrayishMagenta);
+  font-size: .8em;
+  font-weight: 300;
+  margin-top: 2.6em;
+  line-height: 1.9em;
+}
+
+.testimonios .primero {
+  margin-top: 4em;
+}
+
+.testimonios .segundo {
+  margin-top: 5em;
+}
+
+.testimonios .tercero {
+  margin-top: 6em;
+}
+
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  width: 100vw;
+  max-width: 1110px;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.pattern-top-desk {
+  position: absolute;
+  top: 0%;
+}
+
+.pattern-bottom-desk {
+  position: absolute;
+  top: 30%;
+  right: -10%;
+}
+
+.container {
+  margin: auto;
+}
+/*# sourceMappingURL=styles.css.map */
