@@ -1,0 +1,242 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    min-height: 100vh;
+    font-family: "spartan", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  top left, bottom right;
+}
+
+.container {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.title, .star {
+ color: var(--very-dark-magenta)
+}
+
+/* ----------Title---------- */
+
+.title {
+    width: 40%;
+    justify-content: center;
+    float: left;
+    margin: 1em;
+}
+
+.title h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.title p {
+    margin-top: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+/* ----------Parte Rant---------- */
+
+.star {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.star img {
+    float: left;
+    margin: 5px;
+}
+
+.rant {
+    padding: 1.2em 1.5em;
+    background-color: var(--light-grayish-magenta);
+    margin: .5em auto;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.rant p {
+    font-weight: bold;
+    margin-left: 11em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.guru {
+    position: relative;
+    right: 1.5em; 
+} 
+
+.reviwes {
+    position: relative;
+    left: 3em;
+}
+
+.bestech {
+    position: relative;
+    left: 7.5em;
+}
+
+/* ----------Parte de Testimonios---------- */
+
+.testimonios {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 4em;
+}
+
+.testimonio-persona {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-magenta);
+    padding: 2em;
+    margin: 1em;
+}
+
+.identificador {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    left: 4em;
+    bottom: 2.5em;
+}
+
+.testimonio-persona img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.testimonio-persona > p, h3 {
+    color: var(--white)
+}
+
+.testimonio-persona p {
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.testimonio-persona h4 {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+
+.primero {
+    margin-top: 1em;
+}
+
+.segundo{
+    margin-top: 2em;
+}
+
+.tercero {
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image: none;
+    }
+
+
+    .container {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    /*--------Title--------------*/
+    .title {
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .title h1{
+        font-size: 2.3em;
+    }
+
+    .title p {
+        font-size: 1em;
+    }
+
+    /*------------Rant-------------*/
+    .star{
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .rant{
+        width: 100%;
+        position:static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rant p {
+        font-weight: bold;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+    }
+
+    .estrella {
+        margin-bottom: 1em;
+    }
+    
+    /*-----------testimonials-----------*/
+    .testimonios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    
+    .primero {
+        margin-top: 1em;
+    }
+
+    .segundo{
+        margin-top: 1em;
+    }
+
+    .tercero {
+        margin-top: 1em;
+    }
+
+}
